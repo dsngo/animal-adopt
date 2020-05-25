@@ -24,8 +24,8 @@ const SearchParams = () => {
     setBreeds([]);
     setBreed("");
 
-    pet.breeds(animal).then(({ breeds }) => {
-      const breedStrings = breeds.map(({ name }) => name);
+    pet.breeds(animal).then(({ breeds: resolvedBreeds }) => {
+      const breedStrings = resolvedBreeds.map(({ name }) => name);
 
       setBreeds(breedStrings);
     }, console.error);
@@ -33,7 +33,12 @@ const SearchParams = () => {
 
   return (
     <div className="search-params">
-      <form action="">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
+        }}
+      >
         <label htmlFor="location">
           Location
           <input
@@ -46,7 +51,7 @@ const SearchParams = () => {
         </label>
         <AnimalDropdown />
         <BreedDropdown />
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
       <Results pets={pets} />
     </div>

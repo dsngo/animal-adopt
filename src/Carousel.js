@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class Carousel extends Component {
-  state = { photos: [], active: 0 };
+  state = { active: 0, photos: [] };
 
   static getDerivedStateFromProps({ media }) {
     let photos = ["http://placecorgi.com/600/600"];

@@ -33,6 +33,7 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5"
   },
@@ -63,7 +64,9 @@
       "import",
       "jsx-a11y",
       "react",
-      "react-hooks"
+      "react-hooks",
+      "sort-keys-fix",
+      "prettier"
     ],
     "rules": {
       "import/order": [
@@ -134,11 +137,27 @@
           ]
         }
       ],
+      "prettier/prettier": 1,
       "react-hooks/rules-of-hooks": 2,
+      "react/button-has-type": 0,
+      "react/destructuring-assignment": [
+        1,
+        "always",
+        {
+          "ignoreClassFields": true
+        }
+      ],
       "react/jsx-filename-extension": 0,
       "react/jsx-props-no-spreading": 0,
       "react/prop-types": 0,
-      "react/state-in-constructor": 0
+      "react/state-in-constructor": 0,
+      "sort-keys-fix/sort-keys-fix": 1,
+      "sort-vars": [
+        "error",
+        {
+          "ignoreCase": true
+        }
+      ]
     },
     "settings": {
       "react": {
@@ -150,7 +169,9 @@
   "license": "ISC",
   "main": "App.js",
   "name": "adopt-me",
-  "prettier": {},
+  "prettier": {
+    "printWidth": 88
+  },
   "scripts": {
     "clean": "rm -rf .cache/* dist/*",
     "dev": "parcel src/index.html",

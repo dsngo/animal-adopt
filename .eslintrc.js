@@ -91,7 +91,7 @@ const baseRules = {
   "react/state-in-constructor": 0,
   "sort-class-members/sort-class-members": [1, sortClassMembersOptions],
   "sort-keys-fix/sort-keys-fix": 1,
-  "sort-vars": [2, { ignoreCase: true }],
+  "sort-vars": [1, { ignoreCase: true }],
 };
 
 const eslintConfig = {

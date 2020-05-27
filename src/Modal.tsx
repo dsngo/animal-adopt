@@ -1,22 +1,24 @@
-import React, { useEffect, useRef, FunctionComponent } from "react";
+import React, { useEffect, useRef, FunctionComponent, ReactNode } from "react";
 import { createPortal } from "react-dom";
+
+interface IProps {
+  children: ReactNode;
+}
 
 const modalRoot = document.getElementById("modal");
 
-const Modal: FunctionComponent = ({ children }) => {
+const Modal: FunctionComponent<IProps> = ({ children }) => {
   const elRef = useRef(document.createElement("div"));
 
   useEffect(() => {
-    const currentEl = elRef.current;
-
     if (!modalRoot) {
       return;
     }
 
-    modalRoot.appendChild(currentEl);
+    modalRoot.appendChild(elRef.current);
 
     return () => {
-      modalRoot.removeChild(currentEl);
+      modalRoot.removeChild(elRef.current);
     };
   }, []);
 

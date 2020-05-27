@@ -1,31 +1,32 @@
-import React, { Component } from "react";
+import React, { Component, ErrorInfo, ReactNode } from "react";
 import { Link, Redirect } from "@reach/router";
 
 class ErrorBoundary extends Component {
-  state = { hasError: false };
+  state = { hasError: false, redirect: false };
 
-  static getDerivedStateFromError() {
+  static getDerivedStateFromError(): Record<string, unknown> | null {
     return { hasError: true };
   }
 
-  componentDidUpdate() {
+  componentDidCatch(error: Error, info: ErrorInfo): void {
+    console.error("ErrorBoundary caught an error", error, info); // eslint-disable-line
+  }
+
+  componentDidUpdate(): void {
     // eslint-disable-next-line
     if (this.state.hasError) {
       setTimeout(() => this.setState({ redirect: true }), 5000);
     }
   }
 
-  componentDidCatch(error, info) {
-    console.error("ErrorBoundary caught an error", error, info);
-  }
+  render(): ReactNode {
+    const { hasError, redirect } = this.state;
 
-  render() {
-    // eslint-disable-next-line
-    if (this.state.redirect) {
+    if (redirect) {
       return <Redirect to="/" noThrow />;
     }
-    // eslint-disable-next-line
-    if (this.state.hasError) {
+
+    if (hasError) {
       return (
         <h1>
           There was an error with this listing. <Link to="/">Click here</Link> to go

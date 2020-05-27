@@ -1,34 +1,53 @@
-import React, { Component } from "react";
-import pet from "@frontendmasters/pet";
-import { navigate } from "@reach/router";
+import React, { Component, ReactElement } from "react";
+import pet, { Photo } from "@frontendmasters/pet";
+import { navigate, RouteComponentProps } from "@reach/router";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import Modal from "./Modal";
 import ThemeContext from "./ThemeContext";
 
-class Details extends Component {
-  state = { loading: true, showModal: false };
+class Details extends Component<RouteComponentProps<{ id: string }>> {
+  state = {
+    animal: "",
+    breed: "",
+    description: "",
+    loading: true,
+    location: "",
+    media: [] as Photo[],
+    name: "",
+    showModal: false,
+    url: "",
+  };
+
+  adopt = () => navigate(this.state.url);
+
+  toggleModal = () => this.setState({ showModal: !this.state.showModal });
 
   componentDidMount() {
     const { id } = this.props;
 
-    pet.animal(id).then(({ animal }) => {
-      this.setState({
-        animal: animal.type,
-        breed: animal.breeds.primary,
-        description: animal.description,
-        loading: false,
-        location: `${animal.contact.address.city}, ${animal.contact.address.state}`,
-        media: animal.photos,
-        name: animal.name,
-        url: animal.url,
-      });
-    }, console.error);
+    if (!id) {
+      navigate("/");
+
+      return;
+    }
+
+    pet
+      .animal(+id)
+      .then(({ animal }) => {
+        this.setState({
+          animal: animal.type,
+          breed: animal.breeds.primary,
+          description: animal.description,
+          loading: false,
+          location: `${animal.contact.address.city}, ${animal.contact.address.state}`,
+          media: animal.photos,
+          name: animal.name,
+          url: animal.url,
+        });
+      })
+      .catch((err: Error) => this.setState({ error: err }));
   }
-
-  toggleModal = () => this.setState({ showModal: !this.state.showModal }); // eslint-disable-line
-
-  adopt = () => navigate(this.state.url);
 
   render() {
     const {
@@ -53,10 +72,10 @@ class Details extends Component {
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${location}`}</h2>
           <ThemeContext.Consumer>
-            {([theme]) => (
+            {([color]) => (
               <button
                 onClick={this.toggleModal}
-                style={{ backgroundColor: theme }}
+                style={{ backgroundColor: color }}
                 type="submit"
               >
                 Adopt {name}
@@ -80,7 +99,9 @@ class Details extends Component {
   }
 }
 
-export default function DetailsWthErrorBoundary(props) {
+export default function DetailsWthErrorBoundary(
+  props: RouteComponentProps<{ id: string }>
+): ReactElement {
   return (
     <ErrorBoundary>
       <Details {...props} />

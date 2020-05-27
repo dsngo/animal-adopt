@@ -12,7 +12,7 @@ const Modal: FunctionComponent<IProps> = ({ children }) => {
 
   useEffect(() => {
     if (!modalRoot) {
-      return;
+      return undefined;
     }
 
     modalRoot.appendChild(elRef.current);

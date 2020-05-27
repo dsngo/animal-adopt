@@ -8,8 +8,8 @@ import useDropdown from "./useDropdown";
 const SearchParams: FunctionComponent<RouteComponentProps> = () => {
   const [location, setLocation] = useState("Seatle, WA");
   const [breeds, setBreeds] = useState([] as string[]);
-  const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
-  const [breed, BreedDropdown, setBreed] = useDropdown("Breed", "", breeds);
+  const [animal, AnimalDropdown] = useDropdown("dog", "Animal", ANIMALS);
+  const [breed, BreedDropdown, setBreed] = useDropdown("", "Breed", breeds);
   const [pets, setPets] = useState([] as Animal[]);
   const [theme, setTheme] = useContext(ThemeContext);
 

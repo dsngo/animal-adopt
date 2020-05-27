@@ -1,5 +1,6 @@
-import React, { useState, FunctionComponent } from "react";
-import { css, keyframes } from "@emotion/core";
+/** @jsx jsx */
+import React, { useState, FunctionComponent } from "react"; // eslint-disable-line
+import { jsx, css, keyframes } from "@emotion/core";
 import { Link } from "@reach/router";
 
 const color = "pink";
@@ -11,13 +12,10 @@ const Spin = keyframes`
 `;
 
 const NavBar: FunctionComponent = () => {
-  const [padding, setPadding] = useState(15);
+  const [padding] = useState(15);
 
   return (
     <header // eslint-disable-line
-      onClick={() => {
-        setPadding(padding + 1);
-      }}
       css={css`
         background-color: ${color};
         padding: ${padding}px;
@@ -36,8 +34,12 @@ const NavBar: FunctionComponent = () => {
       <span
         css={css`
           display: inline-block;
-          animation: 1s ${Spin} linear infinite;
-          font-size: 60px;
+          animation: 5s ${Spin} linear infinite;
+          font-size: 100px;
+          &:hover {
+            animation: 1s ${Spin} linear infinite reverse;
+            text-decoration: underline;
+          }
         `}
         role="img"
         aria-label="logo"

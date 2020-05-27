@@ -1,4 +1,4 @@
-import React, { useState, lazy } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { Router } from "@reach/router";
 import { render } from "react-dom";
 import NavBar from "./NavBar";
@@ -13,11 +13,12 @@ const App = () => {
   return (
     <ThemeContext.Provider value={themeHook}>
       <NavBar />
-      <Router>
-        <SearchParams />
-        <Details path="/details/:id" />
-      </Router>
-      S
+      <Suspense fallback={<h1>loading route …</h1>}>
+        <Router>
+          <SearchParams path="/" />
+          <Details path="/details/:id" />
+        </Router>
+      </Suspense>
     </ThemeContext.Provider>
   );
 };

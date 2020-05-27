@@ -4,7 +4,7 @@ import { Link, Redirect } from "@reach/router";
 class ErrorBoundary extends Component {
   state = { hasError: false, redirect: false };
 
-  static getDerivedStateFromError(): Record<string, unknown> | null {
+  static getDerivedStateFromError(): unknown {
     return { hasError: true };
   }
 

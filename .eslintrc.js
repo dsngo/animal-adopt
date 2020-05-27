@@ -1,22 +1,23 @@
 const baseExtends = [
+  "eslint:recommended",
   "plugin:import/errors",
   "plugin:jsx-a11y/recommended",
   "plugin:react/recommended",
 ];
 
 const reactPureJsExtends = [].concat.apply(baseExtends, [
-  "airbnb",
-  "airbnb/hooks",
+  // "airbnb",
+  // "airbnb/hooks",
   "prettier",
   "prettier/react",
 ]);
 
 const reactTypeScriptExtends = [].concat.apply(baseExtends, [
-  "eslint:recommended",
   "prettier/@typescript-eslint",
   "plugin:@typescript-eslint/recommended",
   "plugin:prettier/recommended",
 ]);
+
 // Plugins
 const basePlugins = [
   "import",
@@ -27,6 +28,7 @@ const basePlugins = [
   "sort-class-members",
   "prettier",
 ];
+
 // Rules
 const importOrderOptions = {
   alphabetize: { caseInsensitive: false, order: "asc" },
@@ -90,26 +92,25 @@ const baseRules = {
   "sort-keys-fix/sort-keys-fix": 1,
   "sort-vars": [1, { ignoreCase: true }],
 };
+
 // Combined Configs
 const combinedConfigs = {
   env: { browser: true, es6: true, node: true },
-  extends: reactPureJsExtends,
-  parser: "babel-eslint",
+  extends: reactTypeScriptExtends,
+  overrides: [
+    { extends: reactPureJsExtends, files: ["*.js", "*.jsx"], parser: "babel-eslint" },
+  ],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2020,
     sourceType: "module",
   },
-  overrides: {
-    files: /\.tsx?$/,
-    extends: reactTypeScriptExtends,
-    parser: "@typescript-eslint/parser",
-  },
   plugins: basePlugins,
   rules: baseRules,
   settings: {
     "import/resolver": {
-      node: { extensions: [/\.jsx?$/, /\.tsx?$/] },
+      node: { extensions: [".js", ".jsx", ".ts", ".tsx"] },
     },
     react: { version: "detect" },
   },

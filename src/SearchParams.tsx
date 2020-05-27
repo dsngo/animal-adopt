@@ -4,7 +4,7 @@ import { RouteComponentProps } from "@reach/router";
 import Results from "./Results";
 import ThemeContext from "./ThemeContext";
 import useDropdown from "./useDropdown";
-
+import { connect } from "react-redux";
 const SearchParams: FunctionComponent<RouteComponentProps> = () => {
   const [location, setLocation] = useState("Seatle, WA");
   const [breeds, setBreeds] = useState([] as string[]);

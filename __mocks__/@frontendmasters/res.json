@@ -1,0 +1,1571 @@
+{
+  "animals": [
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/tx2269"
+        },
+        "self": {
+          "href": "/v2/animals/44461435"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Baby",
+      "attributes": {
+        "declawed": null,
+        "house_trained": true,
+        "shots_current": true,
+        "spayed_neutered": false,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Terrier",
+        "secondary": "American Staffordshire Terrier",
+        "unknown": false
+      },
+      "coat": "Short",
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Seattle",
+          "country": "US",
+          "postcode": "98101",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Leelee, 3 months old, 12.8lbs. Mixed breed with mostly terrier. Loves to be with her sister, to play, run in...",
+      "environment": {
+        "cats": null,
+        "children": true,
+        "dogs": true
+      },
+      "gender": "Female",
+      "id": 44461435,
+      "name": "Lee Lee & Lolo",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/5/?bust=1555257141",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/5/?bust=1555257141&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/5/?bust=1555257141&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/5/?bust=1555257141&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/1/?bust=1555257069",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/1/?bust=1555257069&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/1/?bust=1555257069&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/1/?bust=1555257069&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/2/?bust=1555257079",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/2/?bust=1555257079&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/2/?bust=1555257079&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/2/?bust=1555257079&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/3/?bust=1555257094",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/3/?bust=1555257094&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/3/?bust=1555257094&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/3/?bust=1555257094&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/4/?bust=1555257106",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/4/?bust=1555257106&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/4/?bust=1555257106&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461435/4/?bust=1555257106&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T15:57:43+0000",
+      "size": "Medium",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": ["Loving", " Playful", " Active"],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/lee-lee-and-lolo-44461435/wa/seattle/three-little-pitties-rescue-tx2269/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/tx2269"
+        },
+        "self": {
+          "href": "/v2/animals/44461391"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Baby",
+      "attributes": {
+        "declawed": false,
+        "house_trained": true,
+        "shots_current": true,
+        "spayed_neutered": false,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Tabby",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": "Tabby (Gray / Blue / Silver)",
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Seattle",
+          "country": "US",
+          "postcode": "98101",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Niko is a 12 week old kitten who likes to lay on your lap and snooze but has a mind...",
+      "environment": {
+        "cats": true,
+        "children": true,
+        "dogs": true
+      },
+      "gender": "Male",
+      "id": 44461391,
+      "name": "Niko",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/1/?bust=1555256631",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/1/?bust=1555256631&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/1/?bust=1555256631&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/1/?bust=1555256631&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/2/?bust=1555256649",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/2/?bust=1555256649&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/2/?bust=1555256649&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/2/?bust=1555256649&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/3/?bust=1555256661",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/3/?bust=1555256661&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/3/?bust=1555256661&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/3/?bust=1555256661&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/4/?bust=1555256678",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/4/?bust=1555256678&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/4/?bust=1555256678&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461391/4/?bust=1555256678&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T15:45:04+0000",
+      "size": "Small",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": ["Loving", " Playful", " Active"],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/niko-44461391/wa/seattle/three-little-pitties-rescue-tx2269/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa391"
+        },
+        "self": {
+          "href": "/v2/animals/44461362"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Young",
+      "attributes": {
+        "declawed": null,
+        "house_trained": true,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Australian Shepherd",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Seattle",
+          "country": "US",
+          "postcode": "98117",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Darling Dylan is approx 1yr old and weighs only 34lbs.  He is a very sweet, friendly boy that loves everyone...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": true
+      },
+      "gender": "Male",
+      "id": 44461362,
+      "name": "DYLAN - Super friendly,sweet,quiet cuddler",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/1/?bust=1555255095",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/1/?bust=1555255095&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/1/?bust=1555255095&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/1/?bust=1555255095&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/2/?bust=1555255107",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/2/?bust=1555255107&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/2/?bust=1555255107&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/2/?bust=1555255107&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/3/?bust=1555255122",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/3/?bust=1555255122&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/3/?bust=1555255122&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44461362/3/?bust=1555255122&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T15:21:02+0000",
+      "size": "Medium",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": ["friendly sweet calm quiet playful"],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/dylan-super-friendlysweetquiet-cuddler-44461362/wa/seattle/ferry-dog-mothers-wa391/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa414"
+        },
+        "self": {
+          "href": "/v2/animals/44460976"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Baby",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": false,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Chihuahua",
+        "secondary": "Dachshund",
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Olalla",
+          "country": "US",
+          "postcode": "98359",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "You can fill out an adoption application online on our official website.PLEASE go to our website www.collarofhope.org to read all...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Male",
+      "id": 44460976,
+      "name": "Vinny",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/1/?bust=1555233068",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/1/?bust=1555233068&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/1/?bust=1555233068&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/1/?bust=1555233068&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/2/?bust=1555233071",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/2/?bust=1555233071&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/2/?bust=1555233071&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/2/?bust=1555233071&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/3/?bust=1555233072",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/3/?bust=1555233072&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/3/?bust=1555233072&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460976/3/?bust=1555233072&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T08:16:43+0000",
+      "size": "Small",
+      "species": "Dog",
+      "status": "adopted",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/vinny-44460976/wa/olalla/collar-of-hope-wa414/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa414"
+        },
+        "self": {
+          "href": "/v2/animals/44460975"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Baby",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": false,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Chihuahua",
+        "secondary": "Dachshund",
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Olalla",
+          "country": "US",
+          "postcode": "98359",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "You can fill out an adoption application online on our official website.&amp;#10;We are accepting applications for our V Litter!&amp;#10;&amp;#10;To be...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460975,
+      "name": "Victoria",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460975/1/?bust=1555233067",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460975/1/?bust=1555233067&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460975/1/?bust=1555233067&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460975/1/?bust=1555233067&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T08:16:43+0000",
+      "size": "Small",
+      "species": "Dog",
+      "status": "adopted",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/victoria-44460975/wa/olalla/collar-of-hope-wa414/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa59"
+        },
+        "self": {
+          "href": "/v2/animals/44460811"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": false,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": false,
+        "primary": "Mixed Breed",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Lynnwood",
+          "country": "US",
+          "postcode": "98037",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "EDAP1 - Inez is a sweet but sensitive gal looking for love! She is a bashful beauty who would like...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460811,
+      "name": "Inez",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/1/?bust=1555234091",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/1/?bust=1555234091&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/1/?bust=1555234091&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/1/?bust=1555234091&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/2/?bust=1555234092",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/2/?bust=1555234092&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/2/?bust=1555234092&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/2/?bust=1555234092&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/3/?bust=1555234095",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/3/?bust=1555234095&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/3/?bust=1555234095&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460811/3/?bust=1555234095&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T08:10:00+0000",
+      "size": "Medium",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/inez-44460811/wa/lynnwood/paws-wa59/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa59"
+        },
+        "self": {
+          "href": "/v2/animals/44460812"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Baby",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": false,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Labrador Retriever",
+        "secondary": "Australian Cattle Dog / Blue Heeler",
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Lynnwood",
+          "country": "US",
+          "postcode": "98037",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "EDAP1 - Cute little Savannah is ready for a home of her very own! This peppy puppy is looking for...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460812,
+      "name": "Savannah",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460812/1/?bust=1555234090",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460812/1/?bust=1555234090&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460812/1/?bust=1555234090&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460812/1/?bust=1555234090&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T08:10:00+0000",
+      "size": "Medium",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/savannah-44460812/wa/lynnwood/paws-wa59/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa59"
+        },
+        "self": {
+          "href": "/v2/animals/44460810"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": false,
+        "house_trained": true,
+        "shots_current": false,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": false,
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": "Long",
+      "colors": {
+        "primary": "Black",
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Seattle",
+          "country": "US",
+          "postcode": "98105",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Blue Moon is a friendly and social feline who enjoys meeting new people and making new friends. He loves pets...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Male",
+      "id": 44460810,
+      "name": "Blue Moon",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460810/1/?bust=1555234089",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460810/1/?bust=1555234089&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460810/1/?bust=1555234089&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460810/1/?bust=1555234089&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T08:10:00+0000",
+      "size": "Medium",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/blue-moon-44460810/wa/seattle/paws-wa59/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa430"
+        },
+        "self": {
+          "href": "/v2/animals/44460480"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Young",
+      "attributes": {
+        "declawed": false,
+        "house_trained": true,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Tabby",
+        "secondary": "Domestic Short Hair",
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Anacortes",
+          "country": "US",
+          "postcode": "98221",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Looking for a name for your new cat or kitten? See www.meowcatnames.com for the best selection of cat names. From...",
+      "environment": {
+        "cats": true,
+        "children": true,
+        "dogs": true
+      },
+      "gender": "Male",
+      "id": 44460480,
+      "name": "Kirby",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/1/?bust=1555231061",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/1/?bust=1555231061&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/1/?bust=1555231061&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/1/?bust=1555231061&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/2/?bust=1555231062",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/2/?bust=1555231062&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/2/?bust=1555231062&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460480/2/?bust=1555231062&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:55:45+0000",
+      "size": "Small",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/kirby-44460480/wa/anacortes/the-cats-meow-wa430/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460366"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": false,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Meet Chasee! Chasee is ready to be adopted to a barn home! Do you have a farm, warehouse, or large...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Male",
+      "id": 44460366,
+      "name": "Chasee",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460366/1/?bust=1555250726",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460366/1/?bust=1555250726&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460366/1/?bust=1555250726&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460366/1/?bust=1555250726&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Small",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/chasee-44460366/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460363"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": false,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Domestic Medium Hair",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Kiev is ready to be adopted to a barn home! Do you have a farm, warehouse, or large garage with...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Male",
+      "id": 44460363,
+      "name": "Kiev",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460363/1/?bust=1555250722",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460363/1/?bust=1555250722&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460363/1/?bust=1555250722&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460363/1/?bust=1555250722&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Medium",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/kiev-44460363/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460369"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Young",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Hound",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Meet Lady! Lady is a super sweet 1 year old hound mix with a sense of adventure. Lady loves spending...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460369,
+      "name": "Lady",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/1/?bust=1555250719",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/1/?bust=1555250719&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/1/?bust=1555250719&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/1/?bust=1555250719&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/2/?bust=1555250732",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/2/?bust=1555250732&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/2/?bust=1555250732&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460369/2/?bust=1555250732&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Medium",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/lady-44460369/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460365"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": false,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": false,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Primary Color: Black Secondary Color: White Weight: 10.3lbs Age: 2yrs 0mths 1wks",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460365,
+      "name": "Midge",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460365/1/?bust=1555250720",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460365/1/?bust=1555250720&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460365/1/?bust=1555250720&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460365/1/?bust=1555250720&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Medium",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/midge-44460365/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460364"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Chihuahua",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Meet Roxy! Roxy is a sweet 4 year old Chihuahua mix with a gentle personality. She loves snuggling and burrowing...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460364,
+      "name": "Roxy",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/1/?bust=1555250718",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/1/?bust=1555250718&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/1/?bust=1555250718&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/1/?bust=1555250718&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/2/?bust=1555250731",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/2/?bust=1555250731&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/2/?bust=1555250731&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/2/?bust=1555250731&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/3/?bust=1555250743",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/3/?bust=1555250743&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/3/?bust=1555250743&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460364/3/?bust=1555250743&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Small",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/roxy-44460364/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460370"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": false,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Meet Mellow! Mellow is a beautiful 4 year old Seal Point boy. He previous home said he really enjoys playing...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Male",
+      "id": 44460370,
+      "name": "Mellow",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/1/?bust=1555250708",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/1/?bust=1555250708&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/1/?bust=1555250708&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/1/?bust=1555250708&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/2/?bust=1555250729",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/2/?bust=1555250729&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/2/?bust=1555250729&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/2/?bust=1555250729&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/3/?bust=1555250744",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/3/?bust=1555250744&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/3/?bust=1555250744&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460370/3/?bust=1555250744&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Medium",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/mellow-44460370/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460373"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": false,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Primary Color: Torbie Weight: 10.3lbs Age: 4yrs 1mths 4wks Animal has been Spayed",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460373,
+      "name": "Tiger Lily",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/1/?bust=1555250716",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/1/?bust=1555250716&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/1/?bust=1555250716&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/1/?bust=1555250716&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/2/?bust=1555250730",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/2/?bust=1555250730&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/2/?bust=1555250730&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/2/?bust=1555250730&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/3/?bust=1555250747",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/3/?bust=1555250747&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/3/?bust=1555250747&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460373/3/?bust=1555250747&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Medium",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/tiger-lily-44460373/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460374"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Adult",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Chihuahua",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Meet Tela! Isn&amp;#39;t she the most adorable little thing? Tela is a huge personality in a tiny body, and this...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460374,
+      "name": "Tela",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/1/?bust=1555250723",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/1/?bust=1555250723&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/1/?bust=1555250723&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/1/?bust=1555250723&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/2/?bust=1555250739",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/2/?bust=1555250739&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/2/?bust=1555250739&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/2/?bust=1555250739&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/3/?bust=1555250750",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/3/?bust=1555250750&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/3/?bust=1555250750&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460374/3/?bust=1555250750&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Small",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/tela-44460374/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460375"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Senior",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Terrier",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Primary Color: Black Secondary Color: Brown Weight: 14.4lbs Age: 11yrs 4mths 0wks Animal has been Neutered",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Male",
+      "id": 44460375,
+      "name": "Cooper",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/1/?bust=1555250714",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/1/?bust=1555250714&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/1/?bust=1555250714&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/1/?bust=1555250714&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/2/?bust=1555250738",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/2/?bust=1555250738&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/2/?bust=1555250738&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460375/2/?bust=1555250738&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Small",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/cooper-44460375/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460371"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        }
+      },
+      "age": "Young",
+      "attributes": {
+        "declawed": null,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Australian Cattle Dog / Blue Heeler",
+        "secondary": "Hound",
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Meet Cypher! Cypher is an adorable 9 month old Australian Cattledog with a sweet and fun personality. He is an...",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Male",
+      "id": 44460371,
+      "name": "Cypher",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/1/?bust=1555250721",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/1/?bust=1555250721&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/1/?bust=1555250721&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/1/?bust=1555250721&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/2/?bust=1555250736",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/2/?bust=1555250736&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/2/?bust=1555250736&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/2/?bust=1555250736&width=100"
+        },
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/3/?bust=1555250741",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/3/?bust=1555250741&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/3/?bust=1555250741&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460371/3/?bust=1555250741&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Medium",
+      "species": "Dog",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Dog",
+      "url": "https://www.petfinder.com/dog/cypher-44460371/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    },
+    {
+      "_links": {
+        "organization": {
+          "href": "/v2/organizations/wa41"
+        },
+        "self": {
+          "href": "/v2/animals/44460361"
+        },
+        "type": {
+          "href": "/v2/types/cat"
+        }
+      },
+      "age": "Baby",
+      "attributes": {
+        "declawed": false,
+        "house_trained": false,
+        "shots_current": true,
+        "spayed_neutered": true,
+        "special_needs": false
+      },
+      "breeds": {
+        "mixed": true,
+        "primary": "Domestic Short Hair",
+        "secondary": null,
+        "unknown": false
+      },
+      "coat": null,
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "contact": {
+        "address": {
+          "address1": "1234 Fake Place",
+          "address2": null,
+          "city": "Silverdale",
+          "country": "US",
+          "postcode": "98383",
+          "state": "WA"
+        },
+        "email": "example@example.com",
+        "phone": "555-555-5555"
+      },
+      "description": "Primary Color: Black Secondary Color: White Weight: 4.1lbs Age: 0yrs 3mths 0wks Animal has been Spayed",
+      "environment": {
+        "cats": null,
+        "children": null,
+        "dogs": null
+      },
+      "gender": "Female",
+      "id": 44460361,
+      "name": "Brooke",
+      "organization_id": "12345",
+      "photos": [
+        {
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460361/1/?bust=1555250700",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460361/1/?bust=1555250700&width=600",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460361/1/?bust=1555250700&width=300",
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/44460361/1/?bust=1555250700&width=100"
+        }
+      ],
+      "published_at": "2019-04-14T07:50:17+0000",
+      "size": "Small",
+      "species": "Cat",
+      "status": "adoptable",
+      "tags": [],
+      "type": "Cat",
+      "url": "https://www.petfinder.com/cat/brooke-44460361/wa/silverdale/kitsap-humane-society-wa41/?referrer_id=44e48166-8259-4b23-8420-bbd2dc9c2079"
+    }
+  ],
+  "pagination": {
+    "_links": {
+      "next": {
+        "href": "/v2/animals?location=Seattle%2C%20WA&page=2"
+      }
+    },
+    "count_per_page": 20,
+    "current_page": 1,
+    "total_count": 113349,
+    "total_pages": 5668
+  }
+}

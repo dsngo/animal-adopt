@@ -67,6 +67,11 @@ const paddingLineBetweenStatementsOptions = [
     next: "import",
     prev: "import",
   },
+  {
+    blankLine: "never",
+    next: "export",
+    prev: "export",
+  },
 ];
 
 const sortClassMembersOptions = {
@@ -103,7 +108,7 @@ const baseRules = {
 
 // Combined Configs
 const combinedConfigs = {
-  env: { browser: true, es6: true, node: true },
+  env: { browser: true, es6: true, jest: true, node: true },
   overrides: [
     {
       extends: reactPureJsExtends,

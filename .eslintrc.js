@@ -1,6 +1,3 @@
-// const mode = "javascript";
-const mode = "typescript";
-
 const baseExtends = [
   "plugin:import/errors",
   "plugin:jsx-a11y/recommended",
@@ -20,7 +17,7 @@ const reactTypeScriptExtends = [].concat.apply(baseExtends, [
   "plugin:@typescript-eslint/recommended",
   "plugin:prettier/recommended",
 ]);
-
+// Plugins
 const basePlugins = [
   "import",
   "jsx-a11y",
@@ -30,7 +27,7 @@ const basePlugins = [
   "sort-class-members",
   "prettier",
 ];
-
+// Rules
 const importOrderOptions = {
   alphabetize: { caseInsensitive: false, order: "asc" },
   groups: ["builtin", "external", "internal"],
@@ -93,23 +90,30 @@ const baseRules = {
   "sort-keys-fix/sort-keys-fix": 1,
   "sort-vars": [1, { ignoreCase: true }],
 };
-
-const eslintConfig = {
+// Combined Configs
+const combinedConfigs = {
   env: { browser: true, es6: true, node: true },
-  extends: mode === "javascript" ? reactPureJsExtends : reactTypeScriptExtends,
-  parser: mode === "javascript" ? "babel-eslint" : "@typescript-eslint/parser",
+  extends: reactPureJsExtends,
+  parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2020,
     sourceType: "module",
   },
+  overrides: {
+    files: /\.tsx?$/,
+    extends: reactTypeScriptExtends,
+    parser: "@typescript-eslint/parser",
+  },
   plugins: basePlugins,
   rules: baseRules,
   settings: {
-    "import/resolver": { node: { extensions: [".js", ".jsx", ".ts", ".tsx"] } },
+    "import/resolver": {
+      node: { extensions: [/\.jsx?$/, /\.tsx?$/] },
+    },
     react: { version: "detect" },
   },
 };
-// console.log(eslintConfig.extends);
+// console.log(combinedConfigs.settings);
 
-module.exports = eslintConfig;
+module.exports = combinedConfigs;

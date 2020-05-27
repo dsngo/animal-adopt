@@ -1,7 +1,8 @@
-import React, { useState, lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Router } from "@reach/router";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
+import { Store, AnyAction } from "redux";
 // import ThemeContext from "./ThemeContext";
 import NavBar from "./NavBar";
 import store from "./store";
@@ -14,7 +15,7 @@ const App = () => {
 
   return (
     // <ThemeContext.Provider value={themeHook}>
-    <Provider store={store}>
+    <Provider store={store as Store<unknown, AnyAction>}>
       <>
         <NavBar />
         <Suspense fallback={<h1>loading route …</h1>}>

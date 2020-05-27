@@ -1,3 +1,3 @@
 export default function changeLocation(location) {
-  return { type: "CHANGE_LOCATION", payload: location };
+  return { payload: location, type: "CHANGE_LOCATION" };
 }

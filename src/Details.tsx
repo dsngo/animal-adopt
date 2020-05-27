@@ -1,12 +1,13 @@
 import React, { Component, ReactElement } from "react";
 import pet, { Photo } from "@frontendmasters/pet";
 import { navigate, RouteComponentProps } from "@reach/router";
+import { connect } from "react-redux";
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import Modal from "./Modal";
-import ThemeContext from "./ThemeContext";
+// import ThemeContext from "./ThemeContext";
 
-class Details extends Component<RouteComponentProps<{ id: string }>> {
+class Details extends Component<RouteComponentProps<{ id: string; theme: string }>> {
   state = {
     animal: "",
     breed: "",
@@ -71,17 +72,17 @@ class Details extends Component<RouteComponentProps<{ id: string }>> {
         <div>
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${location}`}</h2>
-          <ThemeContext.Consumer>
-            {([color]) => (
-              <button
-                onClick={this.toggleModal}
-                style={{ backgroundColor: color }}
-                type="submit"
-              >
-                Adopt {name}
-              </button>
-            )}
-          </ThemeContext.Consumer>
+          {/* <ThemeContext.Consumer>
+            {([color]) => ( */}
+          <button
+            onClick={this.toggleModal}
+            style={{ backgroundColor: this.props.theme }}
+            type="submit"
+          >
+            Adopt {name}
+          </button>
+          {/* )}
+          </ThemeContext.Consumer> */}
 
           <p>{description}</p>
           {showModal ? (
@@ -99,12 +100,15 @@ class Details extends Component<RouteComponentProps<{ id: string }>> {
   }
 }
 
+const mapStateToProps = ({ theme }) => ({ theme });
+const WrappedDetails = connect(mapStateToProps)(Details);
+
 export default function DetailsWthErrorBoundary(
   props: RouteComponentProps<{ id: string }>
 ): ReactElement {
   return (
     <ErrorBoundary>
-      <Details {...props} />
+      <WrappedDetails {...props} />
     </ErrorBoundary>
   );
 }

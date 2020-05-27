@@ -1,3 +1,3 @@
 export default function changeTheme(theme) {
-  return { type: "CHANGE_THEME", payload: location };
+  return { payload: theme, type: "CHANGE_THEME" };
 }

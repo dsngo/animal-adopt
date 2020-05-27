@@ -46,7 +46,15 @@ const paddingLineBetweenStatementsOptions = [
   },
   {
     blankLine: "always",
-    next: ["multiline-const", "class", "export", "function", "return", "import"],
+    next: [
+      "singleline-const",
+      "multiline-const",
+      "class",
+      "export",
+      "function",
+      "return",
+      "import",
+    ],
     prev: ["*"],
   },
   {
@@ -96,11 +104,18 @@ const baseRules = {
 // Combined Configs
 const combinedConfigs = {
   env: { browser: true, es6: true, node: true },
-  extends: reactTypeScriptExtends,
   overrides: [
-    { extends: reactPureJsExtends, files: ["*.js", "*.jsx"], parser: "babel-eslint" },
+    {
+      extends: reactPureJsExtends,
+      files: ["*.js", "*.jsx"],
+      parser: "babel-eslint",
+    },
+    {
+      extends: reactTypeScriptExtends,
+      files: ["*.ts", "*.tsx"],
+      parser: "@typescript-eslint/parser",
+    },
   ],
-  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2020,
@@ -115,6 +130,6 @@ const combinedConfigs = {
     react: { version: "detect" },
   },
 };
-// console.log(combinedConfigs.settings);
+// console.log(combinedConfigs.overrides);
 
 module.exports = combinedConfigs;

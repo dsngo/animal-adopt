@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FC } from "react";
 import { Photo } from "@frontendmasters/pet";
 import { Link } from "@reach/router";
 
@@ -11,14 +11,8 @@ interface IProps {
   location: string;
 }
 
-const Pet: FunctionComponent<IProps> = ({
-  animal,
-  breed,
-  id,
-  media,
-  name,
-  location,
-}) => {
+/* eslint-disable react/prop-types */
+const Pet: FC<IProps> = ({ animal, breed, id, media, name, location }) => {
   let hero = "http://placecorgi.com/300/300";
 
   if (media.length) {
@@ -26,9 +20,9 @@ const Pet: FunctionComponent<IProps> = ({
   }
 
   return (
-    <Link to={`/details/${id}`} className="pet">
+    <Link className="pet" to={`/details/${id}`}>
       <div className="image-container">
-        <img src={hero} alt={name} srcSet="" />
+        <img alt={name} src={hero} srcSet="" />
       </div>
       <div className="info">
         <h1>{name}</h1>

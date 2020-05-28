@@ -8,12 +8,12 @@ import ThemeContext from "./ThemeContext";
 // import changeTheme from "./actionCreators/changeTheme";
 import useDropdown from "./useDropdown";
 
-interface IProps {
-  theme?: string;
-  location?: string;
-  changeTheme?: (a: string) => unknown;
-  changeLocation?: (a: string) => unknown;
-}
+// interface IProps {
+//   theme?: string;
+//   location?: string;
+//   changeTheme?: (a: string) => unknown;
+//   changeLocation?: (a: string) => unknown;
+// }
 
 // const SearchParams: FC<RouteComponentProps & IProps> = ({
 //   theme,
@@ -29,14 +29,25 @@ const SearchParams: FC<RouteComponentProps> = () => {
   const [location, setLocation] = useState("Seatle, WA");
   const [theme, setTheme] = useContext(ThemeContext);
 
-  async function requestPets() {
-    const { animals } = await pet.animals({
-      breed,
-      location,
-      type: animal,
-    });
+  // async function requestPets() {
+  //   const { animals } = await pet.animals({
+  //     breed,
+  //     location,
+  //     type: animal,
+  //   });
 
-    setPets(animals || []);
+  //   setPets(animals || []);
+  // }
+  function requestPets() {
+    pet
+      .animals({
+        breed,
+        location,
+        type: animal,
+      })
+      .then(({ animals }) => {
+        setPets(animals || []);
+      });
   }
 
   useEffect(() => {
@@ -62,9 +73,9 @@ const SearchParams: FC<RouteComponentProps> = () => {
           Location
           <input
             id="location"
+            placeholder="Location"
             type="text"
             value={location}
-            placeholder="Location"
             onChange={(e) => setLocation(e.target.value)}
           />
         </label>
@@ -75,8 +86,8 @@ const SearchParams: FC<RouteComponentProps> = () => {
           <select
             aria-label={theme}
             value={theme}
-            onChange={(e) => setTheme(e.target.value)}
             onBlur={(e) => setTheme(e.target.value)}
+            onChange={(e) => setTheme(e.target.value)}
           >
             <option value="peru">Peru</option>
             <option value="darkblue">Dark Blue</option>
@@ -84,7 +95,7 @@ const SearchParams: FC<RouteComponentProps> = () => {
             <option value="chartreuse">Chartreuse</option>
           </select>
         </label>
-        <button type="submit" style={{ backgroundColor: theme }}>
+        <button style={{ backgroundColor: theme }} type="submit">
           Submit
         </button>
       </form>

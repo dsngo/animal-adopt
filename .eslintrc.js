@@ -1,8 +1,8 @@
 const baseExtends = [
   "eslint:recommended",
+  "plugin:react/recommended",
   "plugin:import/errors",
   "plugin:jsx-a11y/recommended",
-  "plugin:react/recommended",
 ];
 
 const reactPureJsExtends = [].concat.apply(baseExtends, [
@@ -29,6 +29,8 @@ const basePlugins = [
   "prettier",
 ];
 
+const reactTypeScriptPlugins = [].concat.apply(basePlugins, ["@typescript-eslint"]);
+
 // Rules
 const importOrderOptions = {
   alphabetize: { caseInsensitive: false, order: "asc" },
@@ -41,21 +43,26 @@ const importOrderOptions = {
 const paddingLineBetweenStatementsOptions = [
   {
     blankLine: "always",
-    next: "*",
-    prev: ["singleline-const", "singleline-let", "singleline-var", "import", "throw"],
+    next: [
+      "block-like",
+      "class",
+      "export",
+      "return",
+      "multiline-const",
+      "singleline-const",
+    ],
+    prev: ["*"],
   },
   {
     blankLine: "always",
-    next: [
-      "singleline-const",
-      "multiline-const",
-      "class",
-      "export",
-      "function",
-      "return",
+    next: "*",
+    prev: [
+      "block-like",
       "import",
+      "singleline-const",
+      "singleline-let",
+      "singleline-var",
     ],
-    prev: ["*"],
   },
   {
     blankLine: "never",
@@ -64,13 +71,13 @@ const paddingLineBetweenStatementsOptions = [
   },
   {
     blankLine: "never",
-    next: "import",
-    prev: "import",
+    next: "export",
+    prev: "export",
   },
   {
     blankLine: "never",
-    next: "export",
-    prev: "export",
+    next: "import",
+    prev: "import",
   },
 ];
 
@@ -87,6 +94,13 @@ const sortClassMembersOptions = {
   ],
 };
 
+const jsxSortPropsOptions = {
+  callbacksLast: true,
+  ignoreCase: false,
+  reservedFirst: true,
+  shorthandFirst: true,
+};
+
 const baseRules = {
   "consistent-return": 1,
   "import/order": [1, importOrderOptions],
@@ -99,6 +113,7 @@ const baseRules = {
   "react/destructuring-assignment": [1, "always", { ignoreClassFields: true }],
   "react/jsx-filename-extension": 0,
   "react/jsx-props-no-spreading": 0,
+  "react/jsx-sort-props": [1, jsxSortPropsOptions],
   "react/prop-types": 0,
   "react/state-in-constructor": 0,
   "sort-class-members/sort-class-members": [1, sortClassMembersOptions],
@@ -106,21 +121,25 @@ const baseRules = {
   "sort-vars": [1, { ignoreCase: true }],
 };
 
+// Overrides
+const overrides = [
+  {
+    extends: reactPureJsExtends,
+    files: ["*.js", "*.jsx"],
+    parser: "babel-eslint",
+  },
+  {
+    extends: reactTypeScriptExtends,
+    files: ["*.ts", "*.tsx"],
+    parser: "@typescript-eslint/parser",
+    plugins: reactTypeScriptPlugins,
+  },
+];
+
 // Combined Configs
 const combinedConfigs = {
   env: { browser: true, es6: true, jest: true, node: true },
-  overrides: [
-    {
-      extends: reactPureJsExtends,
-      files: ["*.js", "*.jsx"],
-      parser: "babel-eslint",
-    },
-    {
-      extends: reactTypeScriptExtends,
-      files: ["*.ts", "*.tsx"],
-      parser: "@typescript-eslint/parser",
-    },
-  ],
+  overrides,
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2020,

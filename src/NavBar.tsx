@@ -32,6 +32,7 @@ const NavBar: FunctionComponent = () => {
         Adopt Me!
       </Link>
       <span
+        aria-label="logo"
         css={css`
           display: inline-block;
           animation: 5s ${Spin} linear infinite;
@@ -42,7 +43,6 @@ const NavBar: FunctionComponent = () => {
           }
         `}
         role="img"
-        aria-label="logo"
       >
         🐶
       </span>

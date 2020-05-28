@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FC } from "react";
 import { Animal } from "@frontendmasters/pet";
 import Pet from "./Pet";
 
@@ -6,21 +6,22 @@ interface IProps {
   pets: Animal[];
 }
 
-const Results: FunctionComponent<IProps> = ({ pets }) => {
+/* eslint-disable react/prop-types */
+const Results: FC<IProps> = ({ pets }) => {
   return (
-    <div className="search">
+    <div className="search" data-testid="search-results">
       {!pets.length ? (
         <h1>No Pets Found</h1>
       ) : (
         pets.map((e) => (
           <Pet
             key={e.id}
-            id={e.id}
-            name={e.name}
             animal={e.type}
             breed={e.breeds.primary}
-            media={e.photos}
+            id={e.id}
             location={`${e.contact.address.city}, ${e.contact.address.state}`}
+            media={e.photos}
+            name={e.name}
           />
         ))
       )}

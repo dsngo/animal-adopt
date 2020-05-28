@@ -62,6 +62,8 @@ class Details extends Component<RouteComponentProps<{ id: string; theme: string 
       showModal,
     } = this.state;
 
+    const { theme } = this.props;
+
     if (loading) {
       return <h1>Loading ...</h1>;
     }
@@ -75,9 +77,9 @@ class Details extends Component<RouteComponentProps<{ id: string; theme: string 
           {/* <ThemeContext.Consumer>
             {([color]) => ( */}
           <button
-            onClick={this.toggleModal}
-            style={{ backgroundColor: this.props.theme }}
+            style={{ backgroundColor: theme }}
             type="submit"
+            onClick={this.toggleModal}
           >
             Adopt {name}
           </button>

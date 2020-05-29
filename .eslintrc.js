@@ -5,16 +5,11 @@ const baseExtends = [
   "plugin:jsx-a11y/recommended",
 ];
 
-const reactPureJsExtends = [].concat.apply(baseExtends, [
-  // "airbnb",
-  // "airbnb/hooks",
-  "prettier",
-  "prettier/react",
-]);
+const reactPureJsExtends = [].concat.apply(baseExtends, ["prettier", "prettier/react"]);
 
 const reactTypeScriptExtends = [].concat.apply(baseExtends, [
-  "prettier/@typescript-eslint",
   "plugin:@typescript-eslint/recommended",
+  "prettier/@typescript-eslint",
   "plugin:prettier/recommended",
 ]);
 
@@ -29,7 +24,7 @@ const basePlugins = [
   "prettier",
 ];
 
-const reactTypeScriptPlugins = [].concat.apply(basePlugins, ["@typescript-eslint"]);
+const reactTypeScriptPlugins = ["@typescript-eslint"];
 
 // Rules
 const importOrderOptions = {
@@ -98,7 +93,7 @@ const jsxSortPropsOptions = {
   callbacksLast: true,
   ignoreCase: false,
   reservedFirst: true,
-  shorthandFirst: true,
+  shorthandLast: true,
 };
 
 const baseRules = {
@@ -115,7 +110,6 @@ const baseRules = {
   "react/jsx-props-no-spreading": 0,
   "react/jsx-sort-props": [1, jsxSortPropsOptions],
   "react/prop-types": 0,
-  "react/state-in-constructor": 0,
   "sort-class-members/sort-class-members": [1, sortClassMembersOptions],
   "sort-keys-fix/sort-keys-fix": 1,
   "sort-vars": [1, { ignoreCase: true }],
@@ -127,12 +121,14 @@ const overrides = [
     extends: reactPureJsExtends,
     files: ["*.js", "*.jsx"],
     parser: "babel-eslint",
+    rules: baseRules,
   },
   {
     extends: reactTypeScriptExtends,
     files: ["*.ts", "*.tsx"],
     parser: "@typescript-eslint/parser",
     plugins: reactTypeScriptPlugins,
+    rules: baseRules,
   },
 ];
 
@@ -146,7 +142,6 @@ const combinedConfigs = {
     sourceType: "module",
   },
   plugins: basePlugins,
-  rules: baseRules,
   settings: {
     "import/resolver": {
       node: { extensions: [".js", ".jsx", ".ts", ".tsx"] },
@@ -154,6 +149,6 @@ const combinedConfigs = {
     react: { version: "detect" },
   },
 };
-// console.log(combinedConfigs.overrides);
+// console.log(combinedConfigs);
 
 module.exports = combinedConfigs;

@@ -13,11 +13,11 @@ const useDropdown = (
       {label}
       <select
         data-testid={id}
+        disabled={!options.length}
         id={id}
         value={state}
-        onChange={(e) => setState(e.target.value)}
         onBlur={(e) => setState(e.target.value)}
-        disabled={!options.length}
+        onChange={(e) => setState(e.target.value)}
       >
         <option>All</option>
         {options.map((e: string) => (

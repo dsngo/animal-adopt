@@ -11,7 +11,6 @@ interface IProps {
   location: string;
 }
 
-/* eslint-disable react/prop-types */
 const Pet: FC<IProps> = ({ animal, breed, id, media, name, location }) => {
   let hero = "http://placecorgi.com/300/300";
 

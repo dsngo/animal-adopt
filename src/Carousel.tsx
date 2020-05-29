@@ -32,16 +32,16 @@ class Carousel extends Component<IProps> {
 
     return (
       <div className="carousel">
-        <img src={photos[active]} alt="animal" />
+        <img alt="animal" src={photos[active]} />
         <div className="carousel-smaller">
           {photos.map((photo, index) => (
             <img // eslint-disable-line
               key={photo}
-              src={photo}
               alt="animal thumbnail"
-              onClick={this.handleIndexClick}
-              data-index={index}
               className={index === active ? "active" : ""}
+              data-index={index}
+              src={photo}
+              onClick={this.handleIndexClick}
             />
           ))}
         </div>

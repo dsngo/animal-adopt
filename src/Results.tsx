@@ -6,7 +6,6 @@ interface IProps {
   pets: Animal[];
 }
 
-/* eslint-disable react/prop-types */
 const Results: FC<IProps> = ({ pets }) => {
   return (
     <div className="search" data-testid="search-results">
